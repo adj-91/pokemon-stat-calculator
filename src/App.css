@@ -1,38 +1,92 @@
-.App {
-  text-align: center;
+.mainDiv {
+    display: flex;
+    flex-direction: column;
+    color: white;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container {
+    display: flex;
+    flex-direction: row;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.display {
+    width: 75%;
+    height: 4%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: rgb(218, 218, 0);
+    padding: 20px;
+    color: white;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+#image {
+    height: 96px;
+    width: 96px;
+    display: flex;
+    flex-direction: row;
+    transform: translate(0, -10px);
 }
 
-.App-link {
-  color: #61dafb;
+.statsDisplay {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: green;
+    padding: 20px;
+    color: white;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#pokeName {
+    text-transform: capitalize;
+    color: black;
+}
+
+.statRow1, .statRow2 {
+    display: flex;
+    flex-direction: column;
+}
+
+#statsText {
+    margin: 5px;
+    font-size: 14px;
+}
+
+.miscDisplay {
+    width: 95%;
+    height: 4%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: rgb(180, 3, 3);
+    padding: 20px;
+}
+
+.moveDisplay {
+    display: flex;
+    flex-flow: wrap;
+    margin: 5px;
+    padding: 10px;
+    list-style-type: square;
+    background-color: blue;
+    color: white;
+}
+.dropbtn {
+    height: 50px;
+    width: 100px;
+}
+
+#listItem {
+margin-left: 20px;
+margin-top: 2px;
+}
+
+.statInput {
+    width: 35px;
+}
+
+#calcButton {
+    width: 100px;
+    height: 50px;
 }
